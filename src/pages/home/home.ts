@@ -11,7 +11,7 @@ import { Subscription} from 'rxjs/Subscription';
 export class HomePage {
   connected: Subscription;
   disconnected: Subscription;
-  constructor(private toast:ToastController, private geolocation: Geolocation, public navCtrl: NavController, private network: Network) {
+  constructor(private toast:ToastController, public navCtrl: NavController, private network: Network) {
     
   }
   displayNetworkUpdate(connectionState: string){
